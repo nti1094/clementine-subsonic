@@ -25,6 +25,7 @@
 #include "icecastservice.h"
 #include "jamendoservice.h"
 #include "magnatuneservice.h"
+#include "subsonicservice.h"
 #include "internetmimedata.h"
 #include "internetservice.h"
 #include "savedradio.h"
@@ -84,6 +85,7 @@ InternetModel::InternetModel(Application* app, QObject* parent)
 #ifdef HAVE_SPOTIFY
   AddService(new SpotifyService(app, this));
 #endif
+  AddService(new SubsonicService(app, this));
 }
 
 void InternetModel::AddService(InternetService *service) {

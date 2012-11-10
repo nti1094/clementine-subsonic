@@ -70,6 +70,7 @@ public:
     Page_Spotify,
     Page_Magnatune,
     Page_DigitallyImported,
+    Page_Subsonic,
     Page_BackgroundStreams,
     Page_Proxy,
     Page_Transcoding,
